@@ -78,7 +78,9 @@ if ($menuRec):
         endif;
         $result .= '</li>';
     endforeach;
-    $result .= '</ul>';
+    $result .= '
+    <li class="menu-book"><a href="">Book Now</a></li>
+    </ul>';
 endif;
 
 $jVars['module:res-menu'] = $result;
