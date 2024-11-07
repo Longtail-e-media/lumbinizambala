@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <jcms:site:seotitle/>
+
+    <!-- Fevicon -->
+    <jcms:site:fevicon/>
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+    rel="stylesheet">
+    <!-- CSS LIBRARY -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" >
+    <link rel="stylesheet" href="css/ionicons.min.css" type="text/css" >
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" >
+    <link rel="stylesheet" href="css/gallery.css" type="text/css" >
+    <link rel="stylesheet" href="css/vit-gallery.css" type="text/css" >
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" type="text/css" >
+    <link rel="stylesheet" type="text/css"
+    href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css' />
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+
+<body>
+    <!-- HEADER -->
+    <jcms:module:header/> 
+    <!-- END-HEADER -->
+
+    <jcms:module:inner-about-bread/>
+
+   <jcms:module:inner-about-detail/>
+    <!-- END / CONTACT -->
+    <!--FOOTER-->
+    <jcms:module:footer/>
+    <!-- END / FOOTER-->
+    <jcms:module:footer-whatsapp/>
+    <!--SCOLL TOP-->
+    <a href="#" title="sroll" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+    <!--END / SROLL TOP-->
+
+    <!-- LOAD JQUERY -->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vit-gallery.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.min.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.js"></script>
+    <script type="text/javascript" src="js/jquery.littlelightbox.js"></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDyCxHyc8z9gMA5IlipXpt0c33Ajzqix4"></script>
+    <!-- Custom jQuery -->
+    <script type="text/javascript" src="js/sky.js"></script>
+        <script>
+        $('.owl-carousel.image__slider').owlCarousel({
+        loop:true,
+        center: true,
+        navText: ["<i class='fa fa-angle-left fa-2x'></i>", "<i class='fa fa-angle-right fa-2x'></i>"],
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1050:{
+                items:2
+            },
+            1100:{
+                items:3
+            }
+        }
+    })
+        </script>
+
+</body>
+
+</html>

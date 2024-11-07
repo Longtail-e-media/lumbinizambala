@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <jcms:site:seotitle/>
+
+    <!-- Fevicon -->
+    <jcms:site:fevicon/>
+    <!-- GOOGLE FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800' rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900' rel="stylesheet">
+    <!-- CSS LIBRARY -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" >
+    <link rel="stylesheet" href="css/ionicons.min.css" type="text/css" >
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" >
+<link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-zoom.min.css'>
+<link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css'>
+<link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css'>
+    <link rel="stylesheet" href="css/vit-gallery.css" type="text/css" >
+    <link rel="stylesheet"  href="css/bootstrap-select.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css' />
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+     <jcms:module:header/>
+    <!-- END-HEADER -->
+
+    <jcms:module:gallery-bread/>
+    <!-- OUR-GALLERY-->
+    <div class="gallery-our wrap-gallery-restaurant gallery_1">
+        <div class="container">
+            <div class="gallery gallery-restaurant" id="light_gallery">
+                <ul class="nav nav-tabs text-uppercase gallery__tab">
+                    <li class="active"><a data-toggle="tab" href="#all">All</a></li>
+                    <jcms:module:gallery-nav/>
+                </ul>   
+                <br/>
+                <div class="tab-content">
+                    <div id="all" class="tab-pane fade in active">
+                        <div class="product ">
+                            <div class="row">
+                                <jcms:module:gallery-all/>
+                            </div>
+                        </div>
+                    </div>
+                  <jcms:module:gallery-list/>
+                </div>
+                <!-- end-tab-content -->
+            </div>
+            <!-- /gallery -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- END / OUR GALLERY -->
+    <!--FOOTER-->
+    <jcms:module:footer/>
+    <!-- END / FOOTER-->
+     <!-- whatsapp web -->
+     <jcms:module:footer-whatsapp/>
+         <!-- whatsapp web end -->
+    <!--SCOLL TOP-->
+    <a href="#" title="sroll" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+    <!--END / SROLL TOP-->
+
+    <!-- LOAD JQUERY -->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vit-gallery.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.min.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.js"></script>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js'></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js'></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBDyCxHyc8z9gMA5IlipXpt0c33Ajzqix4'></script>
+    <!-- Custom jQuery -->
+    <script type="text/javascript" src="js/sky.js"></script>
+    <script>
+    lightGallery(document.getElementById('light_gallery'), {
+    selector: '.box-img > a',
+    plugins: [lgZoom],
+    
+})
+    </script>
+   
+</body>
+
+</html>

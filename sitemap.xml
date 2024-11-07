@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+    <loc>https://www.hotelsevenstar.com.np//</loc>
+    <lastmod>2024-11-06T14:11:52+05:45</lastmod>
+    <priority>1</priority>
+</url>
+
+        <url>
+            <loc>https://www.hotelsevenstar.com.np//home</loc>
+            <lastmod>2024-11-06T14:11:52+05:45</lastmod>
+            <priority>0.9</priority>
+        </url>
+    
+        <url>
+            <loc>https://www.hotelsevenstar.com.np//contact-us</loc>
+            <lastmod>2024-11-06T14:11:52+05:45</lastmod>
+            <priority>0.9</priority>
+        </url>
+    
+        <url>
+            <loc>https://www.hotelsevenstar.com.np//services</loc>
+            <lastmod>2024-11-06T14:11:52+05:45</lastmod>
+            <priority>0.9</priority>
+        </url>
+    
+        <url>
+            <loc>https://www.hotelsevenstar.com.np//gallery-list</loc>
+            <lastmod>2024-11-06T14:11:52+05:45</lastmod>
+            <priority>0.9</priority>
+        </url>
+    
+        <url>
+            <loc>https://www.hotelsevenstar.com.np//corporate-social-responsibility-csr</loc>
+            <lastmod>2024-09-10T11:23:43+05:45</lastmod>
+            <priority>0.75</priority>
+        </url>
+    
+        <url>
+            <loc>https://www.hotelsevenstar.com.np//career</loc>
+            <lastmod>2024-09-10T11:29:36+05:45</lastmod>
+            <priority>0.75</priority>
+        </url>
+    
+        <url>
+            <loc>https://www.hotelsevenstar.com.np//about-us-home</loc>
+            <lastmod>2024-09-09T15:34:38+05:45</lastmod>
+            <priority>0.75</priority>
+        </url>
+    
+        <url>
+            <loc>https://www.hotelsevenstar.com.np//about-us</loc>
+            <lastmod>2024-09-09T14:39:43+05:45</lastmod>
+            <priority>0.75</priority>
+        </url>
+    
+        <url>
+            <loc>https://www.hotelsevenstar.com.np//vintage-style-restaurant-dining</loc>
+            <lastmod>2024-09-09T22:53:56+05:45</lastmod>
+            <priority>0.8</priority>
+        </url>
+    
+        <url>
+            <loc>https://www.hotelsevenstar.com.np//meeting-events</loc>
+            <lastmod>2024-09-09T16:52:55+05:45</lastmod>
+            <priority>0.8</priority>
+        </url>
+    
+        <url>
+            <loc>https://www.hotelsevenstar.com.np//accommodation</loc>
+            <lastmod>2024-09-09T17:17:34+05:45</lastmod>
+            <priority>0.8</priority>
+        </url>
+    
+        <url>
+            <loc>https://www.hotelsevenstar.com.np//vintage-style-restaurant</loc>
+            <lastmod>2024-09-11T15:36:04+05:45</lastmod>
+            <priority>0.85</priority>
+        </url>
+    
+        <url>
+            <loc>https://www.hotelsevenstar.com.np//hall</loc>
+            <lastmod>2024-09-09T14:17:07+05:45</lastmod>
+            <priority>0.85</priority>
+        </url>
+    
+        <url>
+            <loc>https://www.hotelsevenstar.com.np//deluxe-room</loc>
+            <lastmod>2024-09-09T23:17:01+05:45</lastmod>
+            <priority>0.85</priority>
+        </url>
+    
+        <url>
+            <loc>https://www.hotelsevenstar.com.np//premier-room</loc>
+            <lastmod>2024-09-11T14:23:11+05:45</lastmod>
+            <priority>0.85</priority>
+        </url>
+    
+        <url>
+            <loc>https://www.hotelsevenstar.com.np//suite-room</loc>
+            <lastmod>2024-09-11T14:22:40+05:45</lastmod>
+            <priority>0.85</priority>
+        </url>
+    </urlset>
