@@ -878,10 +878,62 @@ if (defined('HOME_PAGE')) {
         $high_package = '
       <section class="events events-v3">
         <div class="container">
+            <p class="about-sub-title">Our hotel Highlights</p>
             <h2 class="events-title">Hotel Highlights</h2>
             <div class="line"></div>
-            <div id="events-v3" class="hotel_featured owl-carousel owl-theme">
+            <!--<div id="events-v3" class="hotel_featured owl-carousel owl-theme">
                                 '. $highlist .'
+          </div>-->
+          <div class="row row1">
+            <div class="col-lg-6">
+                <div class="highlights-image">
+                    <img src="'.BASE_URL.'/template/web/images/dining.webp" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="highlights-text">
+                    <p class="highlights-subtext">Lorem ipsum dolor sit.</p>
+                    <h3 class="highlights-title">Restaurant & Bar</h3>
+                    <p class="highlights-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, vero. Iure, repellat? Vel minima minus asperiores provident delectus quia inventore magnam accusantium. Mollitia ducimus esse molestiae impedit labore facilis? Recusandae!
+                    </p>
+                    <a href="" class="highlights-explore">Explore More</a>
+                </div>
+            </div>
+          </div>
+          <div class="row row2">
+            <div class="col-lg-6">
+                <div class="highlights-text">
+                    <p class="highlights-subtext">Lorem ipsum dolor sit.</p>
+                    <h3 class="highlights-title">Curio Shop</h3>
+                    <p class="highlights-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, vero. Iure, repellat? Vel minima minus asperiores provident delectus quia inventore magnam accusantium. Mollitia ducimus esse molestiae impedit labore facilis? Recusandae!
+                    </p>
+                    <a href="" class="highlights-explore">Explore More</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="highlights-image">
+                    <img src="'.BASE_URL.'/template/web/images/dining.webp" alt="">
+                </div>
+            </div>
+          </div>
+          <div class="row row3">
+            <div class="col-lg-6">
+                <div class="highlights-image">
+                    <img src="'.BASE_URL.'/template/web/images/dining.webp" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="highlights-text">
+                    <p class="highlights-subtext">Lorem ipsum dolor sit.</p>
+                    <h3 class="highlights-title">Organic Farm</h3>
+                    <p class="highlights-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, vero. Iure, repellat? Vel minima minus asperiores provident delectus quia inventore magnam accusantium. Mollitia ducimus esse molestiae impedit labore facilis? Recusandae!
+                    </p>
+                    <a href="" class="highlights-explore">Explore More</a>
+                </div>
+            </div>
           </div>
         </div>
     </section>

@@ -69,6 +69,9 @@ if(defined('HOME_PAGE')) {
         <div class="testimonials-h">
             <div class="testimonials-content">
                 <div class="container">
+                    <div class="testimonials-heading">
+                        <h3 class="testimonials-title">Our Happy Clients</h3>
+                    </div>
                     <div id="testimonials" class="owl-carousel owl-theme testimonials__img">';
     $tstRec = Testimonial::get_alltestimonial();
     if(!empty($tstRec)) {        
@@ -76,11 +79,18 @@ if(defined('HOME_PAGE')) {
             $tstHtitle.='
             
             <div class="item ">
-                            <div class="img-testimonials"><a href="'.$tstRow->linksrc.'" target="_blank" rel="noopener"><img src="'.IMAGE_PATH.'testimonial/'.$tstRow->image.'" alt="'.$tstRow->name.'">
-                             <p class="testimonials-p2">'.$tstRow->via_type.'</p></a></div>
-                            <p class="testimonials-p">'.strip_tags($tstRow->content).'</p>
-                            <h5 class="sky-h5">'.$tstRow->name.'</h5>
-                            <p class="testimonials-p1">From '.$tstRow->country.'</p>
+                            <!--<div class="img-testimonials"><a href="'.$tstRow->linksrc.'" target="_blank" rel="noopener"><img src="'.IMAGE_PATH.'testimonial/'.$tstRow->image.'" alt="'.$tstRow->name.'">
+                             <p class="testimonials-p2">'.$tstRow->via_type.'</p></a></div>-->
+                            <p class="testimonials-p">'.strip_tags($tstRow->content).'<span class="testimonial-quote"><img src="'.BASE_URL.'/template/web/images/Home-1/quote.png" alt="Quote"></span></p>
+                            <div class="testimonial-person">
+                                <div class="testimonial-person-image">
+                                    <img src="'.BASE_URL.'/template/web/images/P11.webp" alt="person">
+                                </div>
+                                <div class="testimonial-person-name">
+                                    <h5 class="sky-h5">'.$tstRow->name.'</h5>
+                                    <p class="testimonials-p1">From '.$tstRow->country.'</p>
+                                </div>
+                            </div>
                         </div>';
         }
     $tstHtitle.='   </div>

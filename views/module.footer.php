@@ -84,12 +84,12 @@ $footer = '
         <div class="footer-mid">
             <div class="container">
                 <div class="row padding-footer-mid">
-                    <div class="col-lg-2 col-md-12">
-                        <div class="footer-logo text-center list-content">
+                    <div class="col-lg-3 col-md-12">
+                        <div class="footer-logo list-content">
                             <a href="'.BASE_URL.'home" ><img src="'. IMAGE_PATH . 'preference/other/' . $siteRegulars->other_upload .'" width="100%" alt="Image"></a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-5">
+                    <div class="col-lg-3 col-md-5">
                         <div class="list-content ">
                             <h2 class="footer__menu">Hotel Address</h2>
                             <ul class="text-white social_menu_icons">
@@ -103,13 +103,13 @@ $footer = '
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-2">
+                    <div class="col-lg-3 col-md-2">
                         <div class="list-content ">
                             <h2 class="footer__menu">Quick Links</h2>
                             '. $jVars['module:footer-menu'] .'
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-5 sales_office_padding_md">
+                    <div class="col-lg-3 col-md-5 sales_office_padding_md">
                         <div class="list-content social_menu_icons">
                             <h2 class="footer__menu">Corporate Office</h2>
                             <ul class="text-white">

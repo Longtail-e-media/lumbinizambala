@@ -20,7 +20,6 @@ var testing = window.location.pathname;
 
 $(".footer--ajax").load("footer.html");
 
-
     "use strict";
     /*masonry*/
     $('#container').each(function() {
@@ -54,7 +53,7 @@ $(".footer--ajax").load("footer.html");
         loop: true,
         nav: true,
         autoplay: true,
-        autoplayTimeout: 9000,
+        autoplayTimeout: 4000,
         responsive: {
             0: {
                 items: 1
@@ -326,11 +325,11 @@ $(".footer--ajax").load("footer.html");
     $('#events-v2').owlCarousel({
         loop: true,
         nav: true,
-        dots: false,
+        dots: true,
         margin: 30,
-        autoplay: false,
+        autoplay: true,
         pagination: false,
-        autoplayTimeout: 9000,
+        autoplayTimeout: 5000,
         responsive: {
             0: {
                 items: 1
@@ -394,6 +393,7 @@ $(".footer--ajax").load("footer.html");
     $('#testimonials').owlCarousel({
         loop: true,
         nav: true,
+        navText:["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
         margin: 30, // autoplay:true,
         // autoplayTimeout:9000,
         responsive: {
@@ -429,6 +429,30 @@ $(".footer--ajax").load("footer.html");
         }
     });
     /*end-owlCarousel-rooms*/
+
+    /*home gallery */
+    $('#galImagesCarousel').owlCarousel({
+        loop: true,
+        nav: false,
+        margin: 10,
+        dots: false,
+        nav: false,
+        navText: false,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
+    });
+
     $('ul li a').on("click", function() {
         $('li a').removeClass("active");
         $(this).addClass("active");
