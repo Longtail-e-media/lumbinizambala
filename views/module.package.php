@@ -1256,7 +1256,12 @@ if (defined('SUBPACKAGE_PAGE') and isset($_REQUEST['slug'])) {
                         if(!empty($subpkgRec->room_service)){
                    $resubpkgDetail .= '      <!-- END / FORM BOOK -->
                          <div class="cancellation_notice">
-                            <p><b>Cancellation Policy:</b>'. $subpkgRec->room_service.' </p>
+                            <!--<p><b>Cancellation Policy:</b>'. $subpkgRec->room_service.' </p>-->
+                            <div><b>Quick Contacts:</b>
+                            <ul>
+                                <li><a href="tel+977-9857010568"><i class="fa fa-phone"></i>9857010568</a></li>
+                            </ul>
+                            </div>
                          </div>';
                         }
                   $resubpkgDetail .= '   </div>
@@ -1398,7 +1403,7 @@ if (defined('SUBPACKAGE_PAGE') and isset($_REQUEST['slug'])) {
 
                       
     $otherroom .='
-                        <div class="col-sm-6 col-md-3 col-lg-4">
+                        <div class="col-sm-6 col-md-3 col-lg-6">
                             <div class="product-detail_item">
                                 <div class="img">
                                     <a href="'.BASE_URL.$room->slug.'"><img src="'.$imglink123.'" alt="'.$room->title.'"></a>
@@ -1406,11 +1411,11 @@ if (defined('SUBPACKAGE_PAGE') and isset($_REQUEST['slug'])) {
                                 <div class="text">
                                     <h2><a href="'.BASE_URL.$room->slug.'">'.$room->title.'</a></h2>
                                     <ul>
-                                        <li><i class="fa fa-child" aria-hidden="true"></i> Max: '.$room->occupancy.'</li>
-                                        <li><i class="fa fa-bed" aria-hidden="true"></i> Bed: '.$room->bed.'</li>
-                                        <li><i class="fa fa-eye" aria-hidden="true"></i> View: '.$room->view.'</li>
+                                        <li><i class="fa fa-child" aria-hidden="true"></i> <p> Max: '.$room->occupancy.'</p></li>
+                                        <li><i class="fa fa-bed" aria-hidden="true"></i><p>Bed: '.$room->bed.'</p></li>
+                                        <li><i class="fa fa-eye" aria-hidden="true"></i><p> View: '.$room->view.'</p></li>
                                     </ul>
-                                    <a href="'.BASE_URL.$room->slug.'" class="btn btn-room">VIEW DETAIL</a>
+                                    <a href="'.BASE_URL.$room->slug.'" class="btn btn-room">VIEW DETAILS</a>
                                 </div>
                             </div>
                         </div>

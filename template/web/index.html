@@ -195,36 +195,41 @@
      <!-- nearby location end -->
    
     <section class="home-gallery-carousel">
-        <div class="gallery-carousel-title container">
-            <p>Lorem ipsum dolor sit.</p>
-            <h3>Gallery</h3>
-            <div class="line"></div>
-        </div>
         <div class="container-fluid">
-            <div id="galImagesCarousel" class="owl-carousel home-gal">
+            <div id="home_gallery_light" class="owl-carousel home-gal galImagesCarousel">
                 <div class="item">
                     <div class="gall-image">
-                        <img src="./images/diningbanner.jpg" alt="">
+                        <a href="template/web/images/diningbanner.jpg">
+                            <img src="images/diningbanner.jpg" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="gall-image">
-                        <img src="./images/diningbanner.jpg" alt="">
+                        <a href="template/web/images/diningbanner.jpg">
+                            <img src="images/diningbanner.jpg" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="gall-image">
-                        <img src="./images/diningbanner.jpg" alt="">
+                        <a href="template/web/images/diningbanner.jpg">
+                            <img src="images/diningbanner.jpg" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="gall-image">
-                        <img src="./images/diningbanner.jpg" alt="">
+                        <a href="template/web/images/diningbanner.jpg">
+                            <img src="images/diningbanner.jpg" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="gall-image">
-                        <img src="./images/diningbanner.jpg" alt="">
+                        <a href="template/web/images/diningbanner.jpg">
+                            <img src="images/diningbanner.jpg" alt=""> 
+                        </a>
                     </div>
                 </div>
             </div>
@@ -279,6 +284,10 @@
                plugins: [lgZoom],
             });
         });
+
+        lightGallery(document.getElementById('home_gallery_light'), {
+        selector: ' a:not(.cloned a)'
+        })
     </script>
     <script>
     // // Function to calculate the next day from a given date
@@ -398,7 +407,7 @@
         });
     });
 </script>
-   
+
 </body>
 
 </html>

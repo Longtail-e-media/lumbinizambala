@@ -85,8 +85,14 @@ $footer = '
             <div class="container">
                 <div class="row padding-footer-mid">
                     <div class="col-lg-3 col-md-12">
-                        <div class="footer-logo list-content">
+                        <div class="footer-logo list-content text-center">
                             <a href="'.BASE_URL.'home" ><img src="'. IMAGE_PATH . 'preference/other/' . $siteRegulars->other_upload .'" width="100%" alt="Image"></a>
+                        </div>
+                    </div>
+                <div class="col-lg-3 col-md-2">
+                        <div class="list-content ">
+                            <h2 class="footer__menu">Quick Links</h2>
+                            '. $jVars['module:footer-menu'] .'
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-5">
@@ -103,15 +109,9 @@ $footer = '
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-2">
-                        <div class="list-content ">
-                            <h2 class="footer__menu">Quick Links</h2>
-                            '. $jVars['module:footer-menu'] .'
-                        </div>
-                    </div>
                     <div class="col-lg-3 col-md-5 sales_office_padding_md">
                         <div class="list-content social_menu_icons">
-                            <h2 class="footer__menu">Corporate Office</h2>
+                            <h2 class="footer__menu">Kathmandu Office</h2>
                             <ul class="text-white">
                                 <li><a href="https://maps.app.goo.gl/XNG5ixxK28j5vEUs9" target="_blank" rel="noopener"><i class="fa fa-map-marker"></i> '. $siteRegulars->mail_address .'</a></li>
                                 <li><a href="mailto:'. $siteRegulars->contact_info2 .'"><i class="fa fa-envelope"></i> '. $siteRegulars->contact_info2 .'</a></li>
@@ -119,6 +119,12 @@ $footer = '
                                 '.$phonelinked.'
                             </ul>
                         </div>
+                        <!--<div class="list-content social_menu_icons">
+                            <h2 class="footer__menu">&nbsp;</h2>
+                            <p class="footer-about">
+                                We pride ourselves on offering a peaceful relaxation amidst the busy and important religious site ,i.e. Birthplace of Gautam Buddha
+                            </p>
+                        </div>-->
                     </div>
                 </div>
                 <div class="footer-bottom">

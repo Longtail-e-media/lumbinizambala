@@ -105,12 +105,12 @@ else{
                         <div class="text">
                             <h2>Contact</h2>
             <ul class="contact__information">
-                <h4>Hotel Seven</h4>
+                <h4>Lumbini Zambala</h4>
                 <li><a href="https://maps.app.goo.gl/nCatY7ey9fTUB6ku7" target="_blank"><i class=" fa solid fa-map"></i>'. $siteRegulars->fiscal_address .'</a></li>
                 <li><i class="fa fa-phone"></i> '. $tellinked .'</li>
                 <li>'.$whatslinked.'</li>
                 <li><a href="mailto:'. $siteRegulars->email_address .'"><i class="fa fa-envelope-o" aria-hidden="true"></i>'. $siteRegulars->email_address .'</a><li>
-                <h4 class="mt-4">Corporate Office</h4>
+                <h4 class="mt-4">Kathmandu office</h4>
                 <li><a href="https://maps.app.goo.gl/XNG5ixxK28j5vEUs9" target="_blank"><i class=" fa solid fa-map"></i>'. $siteRegulars->mail_address .'</a></li>
                 <li><i class="fa fa-phone"></i> '.$ktminked.'</li>
                 '.$phonelinked.'

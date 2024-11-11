@@ -431,7 +431,7 @@ $(".footer--ajax").load("footer.html");
     /*end-owlCarousel-rooms*/
 
     /*home gallery */
-    $('#galImagesCarousel').owlCarousel({
+    $('.galImagesCarousel').owlCarousel({
         loop: true,
         nav: false,
         margin: 10,

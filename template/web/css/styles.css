@@ -9060,7 +9060,7 @@ transition: all .5s ease-in-out;
   background: #f0e2e2;
 }
 .header-top-sky .navbar .navbar-nav li .dropdown-menu li:hover{
-  background: #711610;
+  background: #2c8b56;
 }
 
 .header-sky .navbar .navbar-nav li .dropdown-menu li:hover a,
@@ -10420,11 +10420,13 @@ object-fit: cover;
 }
 
 .events .owl-carousel .owl-nav {
-  display: flex;
+  display: flex !important;
   position: absolute;
-  right: 15px;
-  top: -105px;
+  justify-content: space-between;
+  top: 50%;
   display: none;
+  width: 100%;
+  margin-left: 10px;
 }
 .events-v2.owl_carousel_nav .owl-carousel .owl-nav{
   display: block;
@@ -11008,10 +11010,23 @@ align-items: center;
 }
 .get_direction{
   color:#fff;
-  border: 1px solid white;
-  padding: 1rem;
+  padding: 1rem 0;
   display: inline-block;
   margin-top: 0.5rem;
+  position: relative;
+}
+.get_direction::after{
+  content:"";
+  border: 1.5px solid white;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 30%;
+  left: 0;
+  transition: ease 0.3s;
+}
+.get_direction:hover::after{
+  width: 100%;
 }
 a.get_direction:link, a.get_direction:hover{
   color:#fff !important;
@@ -11572,8 +11587,8 @@ a.get_direction:link, a.get_direction:hover{
 /*2.4.11 BANNER-TEMS*/
 .banner-tems {
   display: grid;
-  place-items: center;
-  height: 100vh;
+  place-items: end;
+  height: 60vh;
   background-size: cover !important;
 }
 .career_banner{
@@ -12514,7 +12529,8 @@ color: var(--color-primary);
   position: absolute;
   top: 0;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background: rgb(0,0,0);
+  background: linear-gradient(360deg, rgba(0,0,0,0.9220938375350141) 0%, rgba(0,0,0,0.8128501400560224) 35%, rgba(0,0,0,0.0845588235294118) 100%);
   opacity: 0.9;
   left: 0px;
   max-width: 470px;
@@ -12576,7 +12592,8 @@ color: var(--color-primary);
   position: absolute;
   top: 0;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background: rgb(0,0,0);
+  background: linear-gradient(360deg, rgba(0,0,0,0.9220938375350141) 0%, rgba(0,0,0,0.8128501400560224) 35%, rgba(0,0,0,0.0845588235294118) 100%);
   opacity: 0.9;
   right: 0px;
   max-width: 470px;
@@ -13681,7 +13698,7 @@ padding-right: 0 !important;
 .facilities_icons img{
   width: 80px;
   padding: 1rem;
-  filter: brightness(0) saturate(100%) invert(21%) sepia(47%) saturate(2998%) hue-rotate(346deg) brightness(95%) contrast(90%);
+  filter: brightness(0) saturate(100%) invert(16%) sepia(0%) saturate(6%) hue-rotate(247deg) brightness(99%) contrast(89%);
 
 }
 @media (max-width: 767px) {
@@ -18096,10 +18113,18 @@ padding-right: 0 !important;
   display: inline-block;
   padding-left: 25px;
 }
-
+.footer-sky{
+  background-image: url(../images/Home-1/lumbini.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% -140%;
+  background-attachment: fixed;
+}
 .footer-sky .footer-mid {
-  background: linear-gradient(180deg, rgb(6 6 6 / 79%) 0%, rgb(14 14 14 / 62%) 100%), url(../images/sevenstar/footer.jpg) center;
+  background: linear-gradient(180deg, rgb(6 6 6 / 79%) 0%, rgb(14 14 14 / 62%) 100%);
+  background-repeat: no-repeat;
   background-position: bottom;
+  background-attachment: fixed;
   background-size: 100%;
 }
 ul.quicks_links_menu {
@@ -18173,7 +18198,7 @@ color: #fff;
 }
 
 .footer-sky .footer-mid .padding-footer-mid .list-content ul li a:hover {
-  color: #f68f33;
+  /* color: #f68f33; */
   text-decoration: none;
 }
 
@@ -18703,7 +18728,7 @@ h2.our_services {
 .h2-rooms {
   text-transform: uppercase;
   font-weight: bold;
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: var(--heading-family);
   color: #333;
 }
 
@@ -21771,7 +21796,7 @@ list-style: none;
   width:100%;
   font-size:25px;
   width:98%;
-  top: 50%;
+  top: 40%;
   left:50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -22215,7 +22240,8 @@ margin-bottom: 4rem;
 }
 .highlights-explore::after{
   content: "";
-  border: 1px solid black;
+  border: 1.5px solid black;
+  border-radius: 5px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -22337,7 +22363,8 @@ margin-bottom: 4rem;
   top: 0;
 }
 .home-gallery-carousel{
-  margin: 10rem 0;
+  margin: 15rem 0;
+
 }
 .gall-image{
   height: 500px;
@@ -22391,4 +22418,91 @@ h2.footer__menu{
   font-family: var(--heading-family);
   font-size: 23px;
   font-weight: 500px;
+}
+.footer-about{
+  color: white;
+}
+
+.owl-carousel.image__slider .owl-item.active:not(.owl-item.active.center){
+  filter: blur(3px);
+}
+.banner-tems .container{
+  margin-bottom: 30px;
+}
+.product-detail_item{
+  height: 430px;
+  display: flex;
+  gap: 5px;
+  /* overflow: hidden; */
+}
+.product-detail_item .img{
+  overflow: hidden;
+  flex-grow: 1;
+  flex-basis: 50%;
+  height: 100%;
+object-position: center;
+}
+.product-detail_item .img img{
+  height: 100%; 
+  width: auto;
+}
+.product-detail_item .text{
+  margin: 0;
+  flex-grow: 1;
+  flex-basis: 50%;
+  padding: 2rem 4rem;
+  outline: 1px solid black;
+  outline-offset: -15px;
+}
+.product-detail_item .text h2{
+  margin: 2rem 0;
+}
+.product-detail_item:hover .text{
+  opacity: 1;
+}
+.product-detail_item .text .btn-room{
+  margin-top: 3rem;
+  position: relative;
+  border: none;
+  padding: 0;
+  padding-bottom: 10px;
+  width: fit-content;
+  font-size: 14px;
+}
+.product-detail_item .text .btn-room:hover{
+  background-color:transparent;
+  color: black;
+  border: none;
+}
+.product-detail_item .text .btn-room::after{
+  content: "";
+  border: 1.5px solid black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  border-radius: 5px;
+  transition: ease 0.3s;
+}
+.product-detail_item .text .btn-room:hover::after{
+  width: 100%;
+}
+.cancellation_notice ul {
+  padding: 0;
+}
+.cancellation_notice ul li{
+  list-style:none;
+}
+.cancellation_notice ul li a{
+  color: black;
+}
+.cancellation_notice ul li i{
+  margin-right: 10px;
+}
+.product-detail_item .text ul li{
+  display: flex;
+  gap: 3px;
+}
+.banner-content h2{
+  font-family: var(--heading-family) !important;
 }
