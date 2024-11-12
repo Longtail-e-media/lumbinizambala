@@ -84,12 +84,7 @@ $footer = '
         <div class="footer-mid">
             <div class="container">
                 <div class="row padding-footer-mid">
-                    <div class="col-lg-3 col-md-12">
-                        <div class="footer-logo list-content text-center">
-                            <a href="'.BASE_URL.'home" ><img src="'. IMAGE_PATH . 'preference/other/' . $siteRegulars->other_upload .'" width="100%" alt="Image"></a>
-                        </div>
-                    </div>
-                <div class="col-lg-3 col-md-2">
+                    <div class="col-lg-3 col-md-2">
                         <div class="list-content ">
                             <h2 class="footer__menu">Quick Links</h2>
                             '. $jVars['module:footer-menu'] .'
@@ -104,7 +99,7 @@ $footer = '
                                 <li><i class="fa fa-phone"></i> '. $tellinked .'</li>
 
                                 '.$whatslinked.'
-                               <li> ' . $jVars['module:socilaLinkbtm'] . ' </li>
+                               <li class="footer-social"> ' . $jVars['module:socilaLinkbtm'] . ' </li>
 
                             </ul>
                         </div>
@@ -125,6 +120,18 @@ $footer = '
                                 We pride ourselves on offering a peaceful relaxation amidst the busy and important religious site ,i.e. Birthplace of Gautam Buddha
                             </p>
                         </div>-->
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <!--<div class="footer-logo list-content text-center">
+                            <a href="'.BASE_URL.'home" ><img src="'. IMAGE_PATH . 'preference/other/' . $siteRegulars->other_upload .'" width="100%" alt="Image"></a>-->
+                        <h2 class="footer__menu">About Us</h2>
+                        <p class="footer-about">
+                            We pride ourselves on offering a peaceful relaxation amidst the busy and important religious site ,i.e. Birthplace of Gautam Buddha<br>
+                            <div class="footer-payments">
+                                <i class="fa fa-cc-mastercard"></i>
+                                <i class="fa fa-cc-visa"></i>
+                            </div>
+                        </p>
                     </div>
                 </div>
                 <div class="footer-bottom">

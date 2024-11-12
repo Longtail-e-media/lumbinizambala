@@ -97,7 +97,7 @@ else{
     </section>
 
     <!-- CONTACT -->
-    <section class="section-contact">
+    <section class="section-contact contactpage-section">
         <div class="container">
             <div class="contact">
                 <div class="row">

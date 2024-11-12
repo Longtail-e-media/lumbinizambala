@@ -14,7 +14,7 @@ if ($menuRec):
         $data = substr($_SERVER['REQUEST_URI'], $tot);
 
         if (!empty($data)):
-            $linkActive = ($menuRow->linksrc == $data) ? " current-menu-item" : "";
+            $linkActive = ($menuRow->linksrc == $data) ? " currentpage" : "";
             $parentInfo = Menu::find_by_linksrc($data);
             if ($parentInfo):
                 $PlinkActive = ($menuRow->id == $parentInfo->parentOf) ? " " : "";

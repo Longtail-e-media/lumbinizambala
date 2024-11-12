@@ -321,8 +321,8 @@ if (defined('PACKAGE_PAGE') and isset($_REQUEST['slug'])) {
                         <img src="' . IMAGE_PATH . 'subpackage/' . $imageList[0] . '" alt="' . $subpkgRow->title . '">
                     </div>
                     <div class="text">
-                        <h2 class="h2-rooms text-uppercase">' . $subpkgRow->title . '</h2>
-                        <h5 class="h5-room">Start form '. $subpkgRow->currency . $subpkgRow->onep_price .' /Night</h5>
+                    <h5 class="h5-room accomodation-subtitle">From '. $subpkgRow->currency . $subpkgRow->onep_price .' /Night</h5>
+                    <a href="' . BASE_URL . $subpkgRow->slug . '" ><h2 class="h2-rooms text-uppercase accomodation-title">' . $subpkgRow->title . '</h2></a>
                         <p>' . strip_tags($subpkgRow->detail) . '</p>
                         <ul>
                             <li>Max:  ' . $subpkgRow->occupancy . '</li>
@@ -330,7 +330,7 @@ if (defined('PACKAGE_PAGE') and isset($_REQUEST['slug'])) {
                             <li>View: ' . $subpkgRow->view . '</li>
                             <li>Bed: ' . $subpkgRow->bed . '</li>
                         </ul>
-                        <a href="' . BASE_URL . $subpkgRow->slug . '" class="view-dateails btn btn-room">VIEW DETAILS</a>
+                        <a href="#" class="view-dateails btn btn-room view-details-room">BOOK NOW</a>
                     </div>
                 </div>
                 
@@ -344,8 +344,8 @@ if (defined('PACKAGE_PAGE') and isset($_REQUEST['slug'])) {
                         <img src="' . IMAGE_PATH . 'subpackage/' . $imageList[0] . '" alt="' . $subpkgRow->title . '">
                     </div>
                     <div class="text-1">
-                        <h2 class="h2-rooms">' . $subpkgRow->title . '</h2>
-                        <h5 class="h5-room">Start form '. $subpkgRow->currency . $subpkgRow->onep_price .' /Night</h5>
+                    <h5 class="h5-room accomodation-subtitle">From '. $subpkgRow->currency . $subpkgRow->onep_price .' /Night</h5>
+                        <a href="' . BASE_URL . $subpkgRow->slug . '"><h2 class="h2-rooms accomodation-title">' . $subpkgRow->title . '</h2></a>
                         <p>' . strip_tags($subpkgRow->detail) . '</p>
                         <ul>
                            <li>Max:  ' . $subpkgRow->occupancy . '</li>
@@ -353,7 +353,7 @@ if (defined('PACKAGE_PAGE') and isset($_REQUEST['slug'])) {
                             <li>View: ' . $subpkgRow->view . '</li>
                             <li>Bed: ' . $subpkgRow->bed . '</li>
                         </ul>
-                        <a href="' . BASE_URL . $subpkgRow->slug . '" class="view-dateails btn btn-room">VIEW DETAILS</a>
+                        <a href="#" class="view-dateails btn btn-room view-details-room">BOOK NOW</a>
                     </div>
                 </div>
                   ';
@@ -1273,20 +1273,38 @@ if (defined('SUBPACKAGE_PAGE') and isset($_REQUEST['slug'])) {
             $resubpkgDetail .= '
                            <div class="product-detail_tab">
                 <div class="row">
-                    <div class="col-md-3">
-                        <ul class="product-detail_tab-header">
+                    <div class="col-md-3 room-overview">
+                        <!-- <ul class="product-detail_tab-header">
                             <li class="active"><a href="#overview" data-toggle="tab">OVERVIEW</a></li>
                             <li><a href="#amenities" data-toggle="tab">amenities</a></li>
-                        </ul>
+                        </ul> -->
+                        <div class="tab-pane fade active in" id="overview">
+                            <div class="product-detail_overview">
+                            <h3 class="room-overview-title">Overview</h3>
+                                <p>'.$subpkgRec->content.'</p>
+                                <div class="row">
+                                    <div class="room-features">
+                                        <h6>ROOM FEATURES</h6>
+                                        <ul>
+                                            <li>Max: '.$subpkgRec->occupancy.'</li>
+                                            <li>Size: '.$subpkgRec->room_size.'</li>
+                                            <li>View: '.$subpkgRec->view.'</li>
+                                            <li>Bed: '.$subpkgRec->bed.'</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-9">
-                        <div class="product-detail_tab-content tab-content"> ';
+                        <div class="product-detail_tab-content tab-content">
+                        <h3 class="room-amenities-title">Amenities</h3> ';
           
 
             $resubpkgDetail .= '
 
             <!-- OVERVIEW -->
-                            <div class="tab-pane fade active in" id="overview">
+                            <!-- <div class="tab-pane fade active in" id="overview">
                                 <div class="product-detail_overview">
                                     <p>'.$subpkgRec->content.'</p>
                                     <div class="row">
@@ -1301,7 +1319,7 @@ if (defined('SUBPACKAGE_PAGE') and isset($_REQUEST['slug'])) {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- END / OVERVIEW -->
 
 
@@ -1310,11 +1328,11 @@ if (defined('SUBPACKAGE_PAGE') and isset($_REQUEST['slug'])) {
                                     $ftRec = unserialize($subpkgRec->feature);
                                     if (!empty($ftRec)) {
                                         $resubpkgDetail .= '
-                                       <div class="tab-pane fade" id="amenities">
-                                <div class="product-detail_amenities">
-                                    <div class="row">';
-                                    $feature_list ='';
-                                    // pr($ftRec);
+                                       <div class="tab-pane fade active in " id="amenities">
+                                        <div class="product-detail_amenities">
+                                            <div class="row">';
+                                        $feature_list ='';
+                                        // pr($ftRec);
                                             foreach ($ftRec as $k => $v) {
                                                 // $resubpkgDetail .= '<h3 class="room_d_title">' . $v[0][0] . '</h3>';
                                                 if (!empty($v[1])) {
@@ -1403,7 +1421,7 @@ if (defined('SUBPACKAGE_PAGE') and isset($_REQUEST['slug'])) {
 
                       
     $otherroom .='
-                        <div class="col-sm-6 col-md-3 col-lg-6">
+                        <div class="col-sm-6 col-md-3 col-lg-4">
                             <div class="product-detail_item">
                                 <div class="img">
                                     <a href="'.BASE_URL.$room->slug.'"><img src="'.$imglink123.'" alt="'.$room->title.'"></a>

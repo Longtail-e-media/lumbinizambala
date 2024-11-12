@@ -128,7 +128,7 @@ if($gallRecall){
     $thegalall .='';
     // pr($gallRecall);
     foreach($gallRecall as $gallRecalls){
-        $thegalall .='<div class="gallery_product col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+        $thegalall .='<div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-6">
                                     <div class="wrap-box-1">
                                         <div class="box-img">
                                             <a href="' . IMAGE_PATH . 'gallery/galleryimages/' . $gallRecalls->image . '" alt="image gallery">
