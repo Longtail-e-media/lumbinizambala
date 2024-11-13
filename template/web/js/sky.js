@@ -230,6 +230,7 @@ $(".footer--ajax").load("footer.html");
             $('header').addClass('header-top-sky');
         } else {
             $('header').removeClass('header-top-sky');
+
         }
     });
     /*end/scroll-header*/

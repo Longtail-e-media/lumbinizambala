@@ -118,7 +118,8 @@ $header = '
                                 <span class="icon-bar "></span>
                                 <span class="icon-bar "></span>
                             </button>
-                            <a class="navbar-brand" href="home" title="Hotel swven Star"><img src="'. IMAGE_PATH . 'preference/' . $siteRegulars->logo_upload .'" width="150px" alt="logo"></a>
+                            <a class="navbar-brand brand-logo-first" href="home" title="Hotel lumbini zambala"><img src="'. IMAGE_PATH . 'preference/' . $siteRegulars->logo_upload .'" width="150px" alt="logo"></a>
+                            <a class="navbar-brand brand-logo-second" href="home" title="Hotel lumbini zambala"><img src="'. IMAGE_PATH . 'preference/thumbnails/secondlogo.png" width="150px"  alt="logo"></a>
                         </div>
                         <div class="collapse navbar-collapse">
                         '. $jVars['module:res-menu'] .'
